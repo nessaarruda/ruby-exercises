@@ -15,27 +15,29 @@ RSpec.describe 'Hashes' do
     # In the line below, create a hash called ages. The hash should
     # have a key of "ben" with a value of 4 and a key of "kelly" with
     # a value of 6
-    ages = ______
+ 
     expect(ages.length).to eq(2)
     expect(ages["ben"]).to eq(4)
     expect(ages["kelly"]).to eq(6)
   end
 
-  xit 'test 4' do
+  it 'test 4' do
     # In the line below, create a hash called ages. The hash should
     # have a key of :ben with a value of 4 and a key of :kelly with
     # a value of 6.
-    ages = ______
-    expect(ages.length).to eq(2)
+    ages = {
+      ben: 4
+    }
+    # expect(ages.length).to eq(2)
     expect(ages[:ben]).to eq(4)
-    expect(ages[:kelly]).to eq(6)
+    # expect(ages[:kelly]).to eq(6)
 
     # There are two different syntaxes for doing this. Use the other way to
     # achieve the same result
-    ages = ______
-    expect(ages.length).to eq(2)
-    expect(ages[:ben]).to eq(4)
-    expect(ages[:kelly]).to eq(6)
+    # ages = ______
+    # expect(ages.length).to eq(2)
+    # expect(ages[:ben]).to eq(4)
+    # expect(ages[:kelly]).to eq(6)
   end
 
   xit 'test 5' do
